@@ -53,6 +53,11 @@ One-hot encoding is very similar to label encoding, but instead of assigning a s
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, ... 0]]
 ```
 
+**One-Hot Encoding:**
+![One-Hot Encoding](assets/onehotencoding.png)
+*[Source](https://towardsdatascience.com/scikit-learn-1-1-comes-with-an-improved-onehotencoder-5a1f939da190)*
+
+### Limitations of Label Encoding and One-Hot Encoding
 A disadvantage of both of these encoding methods is that they do not capture the relationship between the different values of the input variable. For example, in the case of encoding the characters in a string, the numerical values assigned to the characters do not reflect the similarity or relationship between the characters. You can imagine that the characters 'a' and 'e' might be more similar to each other than 'a' and 'c', as 'a' and 'e' are both vowels, while 'a' and 'c' are not. This information is not captured by label encoding or one-hot encoding.
 
 ### Encoding Amino Acids
@@ -69,6 +74,7 @@ Some ideas for encoding methods are:
 
 **The BLOSUM62 Matrix:**
 ![Blosum Matrix](assets/blosum62.jpg)
+*[Source](https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/blosum)*
 
 ### Minimum Requirements
 1. The new encoding method should be implemented as a new class in the `encoders.py` file of the `stringencoder` package.
