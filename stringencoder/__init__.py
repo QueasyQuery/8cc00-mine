@@ -1,4 +1,4 @@
-from .base.encoders import OneHotEncoder
+from .base.encoders import OneHotEncoder, LabelEncoder
 
-__all__ = ['OneHotEncoder']
+__all__ = ['OneHotEncoder', 'LabelEncoder']
 
