@@ -73,7 +73,9 @@ Some ideas for encoding methods are:
 - Encoding based on the rows of the [BLOSUM62 matrix](https://en.wikipedia.org/wiki/BLOSUM), where each amino acid is represented by its corresponding row in the matrix.
 
 **The BLOSUM62 Matrix:**
+
 ![Blosum Matrix](assets/blosum62.jpg)
+
 *[Source](https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/blosum)*
 
 ### Minimum Requirements
