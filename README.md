@@ -32,6 +32,9 @@ Before starting, please complete the following steps:
 - 14:30 - 15:15 Working on a collaborative project with Git; extending a string encoder package.
 
 ## Practical Instructions
+> [!NOTE]
+> You don't have to work on this on your own. We will work on the exercises in during the second half of the lecture.
+
 This repository contains a simple Python package called `stringencoder`. First, some background information on encoding strings.
 
 ### Background: Encoding Strings
@@ -65,7 +68,7 @@ In biomedical data analysis, a common type of data is amino acid sequences, and 
 
 However, as mentioned earlier, label encoding does not capture the relationship between the amino acids. To capture this relationship, we can use some features of the amino acids, such as their molecular properties, to create a more informative encoding. For example, we can use the hydrophobicity, hydration energy, or the molecular weight, or any other feature of the amino acids to create a more informative encoding.
 
-## Practical Task
+### Practical Task
 In this practical, you will work on extending the `stringencoder` package to include a new encoding method for amino acids. The package currently contains two basic encoding methods: label encoding and one-hot encoding. Your task is to implement a new encoding method that captures some information about the amino acids. 
 
 Some ideas for encoding methods are:
