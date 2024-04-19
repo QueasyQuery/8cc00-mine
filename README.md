@@ -27,9 +27,9 @@ Before starting, please complete the following steps:
 ## Program
 
 - 13:30 - 13:45 Introduction to Git and GitHub ([Slides](assets/lecture_slides.pdf))
-- 13:45 - 14:15 Configuring and working with Git and GitHub
+- 13:45 - 14:15 Demo: Issues, Pull Requests, Forks
 - 14:15 - 14:30 Break
-- 14:30 - 15:15 Working on a collaborative project with Git; extending a string encoder package.
+- 14:30 - 15:15 Working on a collaborative project with GitHub; extending a string encoder package.
 
 ## Practical Instructions
 > [!NOTE]
