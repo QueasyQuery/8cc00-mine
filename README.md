@@ -1,5 +1,4 @@
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Computational-Biology-TUe/8cc00/python-package-conda.yml?label=Tests)
-
+[![Tests](https://github.com/Computational-Biology-TUe/8cc00/actions/workflows/Tests.yml/badge.svg)](https://github.com/Computational-Biology-TUe/8cc00/actions/workflows/Tests.yml?label=Tests)
 
 # Working on Collaborative Coding Projects with Git and GitHub
 *8CC00 - Advanced Programming and Biomedical Data Analysis*
