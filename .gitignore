@@ -161,3 +161,7 @@ cython_debug/
 
 # data generation notebook
 generate_data.ipynb
+
+virtualpetridish*
+*.gif
+*.dish
