@@ -1,6 +1,6 @@
-
 from stringencoder import OneHotEncoder, LabelEncoder
 import numpy as np
+
 
 class TestEncoders:
     def test_onehot_encoder(self):
@@ -36,3 +36,4 @@ class TestEncoders:
         encoded = encoder.encode('abc')
         decoded = encoder.decode(encoded)
         assert decoded == 'abc'
+        

@@ -17,8 +17,7 @@ class BaseStringEncoder:
         Additional keyword arguments.
     """
 
-
-    def __init__(self, table, mat, force_unique_features=True,**kwargs):
+    def __init__(self, table, mat, force_unique_features=True, **kwargs):
 
         # table should have the same amount of entries as the rows in mat
         if len(table) != mat.shape[0]:
@@ -28,12 +27,16 @@ class BaseStringEncoder:
         if len(set(table)) != len(table):
             char_count = self._find_duplicate_chars(table)
             duplicates = [(char, count) for char, count in char_count.items() if count > 1]
-            raise ValueError("Table has duplicate characters:\n" + "\n".join([f"\t- {char}: {count}" for char, count in duplicates]))
-        
+            raise ValueError(
+                "Table has duplicate characters:\n" + "\n".join(
+                    [f"\t- {char}: {count}" for char, count in duplicates]
+                    )
+                )
+
         # mat should have unique rows if force_unique_features is True
         if force_unique_features and len(set([tuple(row) for row in mat])) != mat.shape[0]:
             raise ValueError("Matrix has duplicate rows")
-        
+
         self._table = table
         self._mat = mat
         self._kwargs = kwargs
@@ -77,6 +80,4 @@ class BaseStringEncoder:
 
     def __eq__(self, other):
         return self.__dict__ == other.__dict__
-
-
-# Path: stringencoder/base/base_encoder.py
+    
