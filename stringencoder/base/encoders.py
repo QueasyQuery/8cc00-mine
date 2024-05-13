@@ -27,3 +27,15 @@ class LabelEncoder(BaseStringEncoder):
     def __repr__(self):
         return self.__str__()
     
+class veryCoolAminoAcidEncoder(BaseStringEncoder):
+
+    def __init__(self, table: str = 'ACDEFGHIKLMNPQRSTVWY', **kwargs):
+        self._mat = np.arange(len(table)).reshape(-1, 1)
+        super().__init__(table, self._mat, **kwargs)
+
+    def __str__(self):
+        return self.__class__.__name__ + str(self._kwargs)
+    
+    def __repr__(self):
+        return self.__str__()
+    
