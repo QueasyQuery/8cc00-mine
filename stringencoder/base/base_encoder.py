@@ -79,5 +79,5 @@ class BaseStringEncoder:
         return self.__str__()
 
     def __eq__(self, other):
-        return self.__dict__ == other.__dict__
+        return self._table == other._table and np.all(self._mat == other._mat)
     
