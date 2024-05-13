@@ -1,5 +1,6 @@
 from .base_encoder import BaseStringEncoder
 import numpy as np
+import blosum as bl
 
 
 class OneHotEncoder(BaseStringEncoder):
@@ -30,7 +31,7 @@ class LabelEncoder(BaseStringEncoder):
 class veryCoolAminoAcidEncoder(BaseStringEncoder):
 
     def __init__(self, table: str = 'ACDEFGHIKLMNPQRSTVWY', **kwargs):
-        self._mat = np.arange(len(table)).reshape(-1, 1)
+        self._mat = bl.BLOSUM(62)
         super().__init__(table, self._mat, **kwargs)
 
     def __str__(self):

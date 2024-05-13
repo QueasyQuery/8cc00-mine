@@ -4,6 +4,7 @@ channels:
   - bioconda
   - defaults
 dependencies:
+  - blosum
   - python=3.12
   - scikit-learn
   - numpy
