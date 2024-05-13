@@ -94,6 +94,7 @@ encoder = YourAminoAcidEncoder()
 encoded_sequence = encoder.encode("ACDEFGHIKLMNPQRSTVWY")
 ```
 3. The new encoding method should capture some information about the amino acids that is not captured by label encoding or one-hot encoding.
+4. All new implementation should be fully tested in the `test_encoders.py` file.
 
 
 
