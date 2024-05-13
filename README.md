@@ -6,6 +6,9 @@
 
 Max de Rooij - Eindhoven University of Technology - 2024
 
+## Example
+This is an example of an update to Git.
+
 ## Introduction
 Git is a distributed version control system that is widely used in software 
 development. GitHub is a web-based platform that provides hosting for Git 
