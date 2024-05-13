@@ -10,4 +10,5 @@ dependencies:
   - matplotlib
   - pytest
   - tqdm
+  - coverage
 prefix: /Users/max/anaconda3/envs/8cc00
